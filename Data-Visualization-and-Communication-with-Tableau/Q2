@@ -1,0 +1,403 @@
+## Mentor Hints for Week 2 Graded Quiz
+
+Data sets
+a. Salary Data Set
+
+b. Dognition data
+
+Question 1
+Consider whether there are other ways to aggregate the variable you are examining that would be more 
+appropriate for answering this question.
+
+Note:
+Hover the mouse over Outlier for the answer
+
+# Tableau
+
+Question 2
+The “View Data” function in the Tableau workspace might be helpful for answering this question.
+
+# Steps:
+1.Filter out the outliers in Dog ID (those with sign-in counts greater than 175). 
+2. Place State in the Filter and display on "37".
+3. Right-click on "11" and select "View Data". When the dialog box pops up, select "Full Data" at the bottom.
+4. Immediately, you can select "They are all from Estonia", exclude "They are all golden retrievers" and "They are all charmers".
+5. Scroll to the right till you see "Total Test Completed" and "Weight". You will see that "They all completed 37 tests" 
+and "They all weight 37 pounds" should be excluded as well.
+
+Question 3
+The “View Data” function in the Tableau workspace might be helpful for answering this question.
+Note:
+For check these hypothesis, You put Avg(total test completed) in column shelf and drag DNA tested, dog fixed and breed type respectively
+in row shelf and also same 3 variable drag on filter area. Now you can check first hypothesis as only select DNA tested option in filter
+option (don't select breed type and dog fixed) and you can see, the avg of DNA tested dog (DNA=1) completed more test than not tested DNA 
+dog. Now check second hypothesis as which type of breed interacted more during completed test, So, you only select two variable now, DNA 
+tested and Breed type in shelf (don't select dog fixed) , you can see, Cross breed is highest avg completed test in DNA tested dog group
+and Popular hybrid is highest avg completed test in not DNA test dog group.
+
+Question 4
+Make sure you have filtered out the group of dogs whose data we know is not real (see Exercise 1) 
+and double-check that the type of aggregation you are using in your analysis is appropriate.
+Note:
+For check first question. You can solve this question in two ways either use of map or use of bar chart. Put dog id as count distinct 
+in row shelf and country variable in column shelf and click "Show me" card (right hand corner side option) and click on map. 
+You can see, the US country apparent more as dog user who completed test. Second way, make a group of US and non US country 
+(how! ok, put country in row shelf and right click "abc" in front of US option in table and select group option). Now you can check, 
+put country (group) variable in column shelf and avg(total test completed) in row shelf. Now you can see, US country is more dog
+completed test than Non other US country.
+
+For check second question. Put country(group) variable in filter area and CNTD(dog id) in row shelf and state variable in column shelf. 
+Now, there two option in country (group) select US. The result will come out as CA region in US country have more dog user who completed
+test and after CA (California) region, NY (New York) have more dog user who completed test in US country.
+
+Comment: 
+all the dimensions' average number of tests completed fall in a very small range between 21.77 (ace) and 21.23 (stranger), therefore the 
+differences among 9 dimensions are very small. So, I would say that they are actually very similar...
+
+Question 5
+Make sure the type of aggregation you are using in your analysis is appropriate.
+Note:
+If you put "Breed group" on column shelf and "total test completed" in row shelf . You can see now, the first option in quiz is wrong. 
+Now again, covert your "total test completed" variable from sum to avg and median (do one by one). After convert , the result more 
+apparent as which breed group completed more test and which breed group completed least test overall.
+
+Put Total test completed variable in filter area as well as row shelf . After that drag both "Mean ITI and Median ITI" variable in 
+column shelf. You can see, there are two graph, first do de-aggregate analysis as click Analysis in menu option and click off aggregate
+measure then right click on empty space in both graph and select "trend line -> show trend lines" option. the regression line will 
+appear on the graph. Now right click on total test completed variable in filter area then select "show filter" option. Now you can see a
+filter card will appear on right side corner and drag total test completed from 1 to 19 (because we want to see, the data from dogs who 
+completed 20 or more tests ). You can see, the regression line are opposite because one outliear appear in this test (see closely one 
+point is far away) . You try to explore this outliear as right click on this point and see view data. You can find as this dog id, 
+completed 2 test and the completion difference between two test is 650 days. (Woow! i think maybe, User was forgot after taking first 
+game then remember after two year, ohh yes, now time to complete second test). :P
+
+Question 6
+Please review Lesson 3 Let's Get Started to review how to arrive at the correct answer.
+Note:
+set axis from greatest to least
+
+Question 7
+Please review Lesson 3 Let's Get Started to review how to arrive at the correct answer.
+Note:
+3. Hover on the bars... you should see the results
+
+Question 8
+Please check that you are using the appropriate aggregation, and review Lesson 3
+Let's Get Started and the course Practice Exercises for information about how to arrive at the correct answer.
+
+# Variables & Filters:
+There are three variables we are interested in: Dog Fixed, Breed Type and Average Number of Test Completed.
+Filters: Dog ID( Group) Other
+
+# Summary: 
+There are three variables we are interested in: Dog Fixed, Breed Type and Average Number of Test Completed.
+
+# Some immediate observations:
+1. On average, fixed dogs completed more tests than non-fixed dogs on all breed types. All the bars in fixed dog category 
+(1) are higher than in the non-fixed category (0)
+2. The greatest difference is between the Mixed Breed/Other/I don't Know.
+
+These are the only choices in the answer that are supported by data.
+
+Question 9
+Please review Lesson 3 Let's Get Started to review how to arrive at the correct answer.
+# Summary: 
+In addition to the three variables in Q8, there is an additional variable we are also interested in: DNA Tested. Add "DNA Tested" 
+to the Column shelf in the order shown. Place the variables in this order will make analyzing the answer choices in Q9 
+more straight forward.
+
+# Steps:
+Filter out the outliers in Dog ID (those with Sign-In Count greater than 175), since those accounts were created to test the system 
+(it was mentioned in page 2 of the exercise PDF file).
+
+# Analysis:
+Answer choice: "The Cross-Breed dogs that were DNA tested but NOT fixed were mostly Labrador Retriever-Golden Retriever Mixes".
+--->In the block for DNA tested but not fixed, the 3rd block from the left, right-click on the bar for Cross Breed, click on 
+View Data and select Full Data at the bottom. You can immediately tell that the dogs in this category are mostly
+Labrador Retriever-Golden Retriever Mixes.
+
+Answer choice: "The Cross-Breed dogs that were DNA tested but NOT fixed were mostly Golden Doodles."
+--->No. Because of the analysis above, this should be immediately excluded.
+
+Answer choice: "There was only one dog in the Popular Hybrid breed category who was DNA tested but not fixed."
+--> DNA tested but not fixed. So the 3rd block from the left in the graph. Right click on the bar for Popular Hybrid, click on View 
+Data and click Full Data at the bottom of the dialog box. You see that there is only one entry in the full data. So, the above 
+statement is correct and should be selected.
+
+Answer choice: "DNA-tested dogs completed more tests than dogs that were NOT DNA tested in all categories except for the category of 
+Popular Hybrids who were fixed."
+-->Take "Dog Fixed" off the Columns shelf. You can immediately tell that except for Popular Hybrids, DNA tested dogs completed more
+tests than dogs that are not DNA tested. Hence, the above statement should be selected.
+
+Answer choice: "DNA-tested dogs completed less tests than dogs that were NOT DNA tested in all categories except for the category 
+of Popular Hybrids who were fixed."
+--> Because of the analysis above, this statement is false and should not be selected.
+
+Question 10
+Check your filters, and make sure your aggregations are appropriate. 
+See Practice Exercise 4 for more information about how to make the graph.
+Note: 
+Hover over the African country for the answer.
+
+Question 11
+Make sure your aggregations are appropriate, and remember that you can hover over the state to see 
+the precise number of records in the tool tip.
+
+Note:
+edit axis from greatest to least for the answer
+
+Question 13
+Please review video https://www.youtube.com/watch?v=o2q-L3auqW8
+# Example in the video demonstrates how an Outlier ,when included in a dataset, can cause both the Mean and standard deviations 
+calucations to be very different. When Compared to the original calculation which didn't include a outlier. 
+
+Question 14
+Refer to Lesson 6 Line Graphs and Box Plots to review how to answer this type of question.
+
+"There was a significant positive (p < .05) correlation between average ITIs and number of tests completed."
+--> To test the truthfulness of the above statement, do the following: Place Mean ITI (Minutes) in the Columns shelf and place 
+Total Test Completed in the Rows shelf. The default function will be Sum. Whatever used for Mean ITI, the independent variable, 
+the same function should be used for the dependent variable Total Test Completed. Disaggregate the data by going to Analysis tab and 
+un-check Aggregate Measures.
+
+Group the Sign-In Count outliers by Dog ID (those with sign-in count greater than 175) Place Dog ID (Group) in the Filter and 
+display Other.
+
+Place Mean ITI (Minutes) in the Filter and display only values are 150K or less to filter out the outliers. 
+(Drag the variable to Filter: "#All" --> At Most --> 150,000)
+
+Place Total Test Completed display only values that are less than or equal to 19. 
+(Drag the variable to the Filter: "#All", --> At Most -->19)
+
+Right-click and select "Show Trend Lines...". You can immediately tell that the correlation between the Mean ITI (Minutes) and 
+Number of Test Completed is positive, because the line has an up-ward slope. To find the p-value, point the cursor at the line. 
+p-value<0.0001, which is smaller than 0.5, so the correlation is significant at the 95% confidence interval by the p-value approach.
+
+So, the statement is true.
+
+"There was a significant negative (p < .05) correlation between median ITIs and number of tests completed."
+To test the truthfulness of this statement, take Mean ITI out of the Columns shelf and put Median ITI (Minutes) there. Take Mean ITI 
+(minutes) out of the Filter and put Median ITI (Minutes) there. Display only values below 150K as previously did with the Mean.
+
+Right-click and select "Show Trend Line...". You can immediately tell that the correlation is negative, because of the line is down-ward
+sloping line. Point the cursor the line to display the p-value. p-value <0.0001, below 5%, hence, the correlation is significant 
+at 95% confidence interval, by the p-value approach.
+
+The above are the only two correct statements in Q14's answer choices. Indeed, once you select the above two statements, the others are
+automatically false, since they contradict the above two statements.
+
+To answer Francesco Racanati's question "why are we talking of "significant correlation" if we are getting so lower values of R^2?", 
+a low R-square and a significant p-value, this is what happens why you force a regression on two variables while the independent variable
+bears little predictive effect on the dependent variable. Using the Median ITI (Minute) vs. Total Test Completed as an example, 
+the R-square is only 0.0084051 while the p-value is statistically significant. Only 0.8% change in dependent variable 
+"Total Test Completed" is explained by the independent variable "Median ITI (Minutes)".
+
+Low R-squared could also happen when statistically insignificant independent variables are included with significant independent 
+variables in the model. But in the case of Q14, there is only one independent variable, Mean ITI or Median ITI. Hence, we can conclude 
+that Mean ITI or Median ITI have little or no predictive effect on the dependent variable "Total Tests Completed".
+
+
+Question 15
+Refer to Lesson 6 Line Graphs and Box Plots to review how to answer this type of question.
+--> Use the same approach as above, except that change the filter on Total Test Completed to 7.
+
+## Quiz 2
+1. Use the Dognition_aggregated_by_DogID data set for the quiz questions. Note that we use comma (,) to separate groups of thousands in 
+numbers. How many unique human user IDs are there in the Dognition_aggregated_by_DogID data set?
+
+2. What feature is common to all the rows that have a value of 37 in the “State” field of the Dognition_aggregated_by_DogID data set? 
+Check all that apply.
+
+3. What property is common to almost all the data points that had “Sign In Counts” 
+of greater than 175 in the Dognition_aggregated_by_DogID data set?
+
+4. The Personality Dimension that has the highest average number of completed tests in the Dognition_aggregated_by_DogID 
+data set is clearly:
+
+5. In the Dognition_aggregated_by_DogID data set, what is consistent about the relationship between breeding group 
+and number of tests completed, regardless of whether you aggregate the variable representing the number of tests 
+completed by the median or the average of the breeding group?
+
+6. In the Dognition_aggregated_by_DogID data set, what personality type has the strongest representation (greatest number of records) 
+in the sporting breed group?
+
+7. In the Dognition_aggregated_by_DogID data set, which of the following describes the median number of tests dogs 
+of different breed types complete?
+
+8. In the Dognition_aggregated_by_DogID data set, how do the average number of tests dogs complete compare 
+for fixed vs. not fixed dogs across different breed types? Click all that apply
+
+9. In the Dognition_aggregated_by_DogID data set, which of the following are true about 
+the average number of tests dogs complete when comparing DNA vs. not DNA-tested dogs who were fixed vs. 
+not fixed across different breed types? Click all that apply.
+
+10. In the Dognition_aggregated_by_DogID data set, when you make a filled map that displays the number of unique Dog IDs
+in each country, there is country in Africa that has a deep color, suggesting it has a lot of users.
+When you hover over that country, what Country is displayed on the tool tip?
+
+11. In the Dognition_aggregated_by_DogID data set, which state within the United States has the most Dognition customers?
+
+12. In the Dognition_aggregated_by_DogID data set, dogs in which of the following states did customers 
+complete a median number of tests that was greater than 13? Check all that apply.
+
+13. Which of the following is true?
+
+14. In the Dognition_aggregated_by_DogID data set, when looking at only dogs who completed 19 or less tests, 
+which of the following is true about the relationship between inter-test intervals (ITIs) and number of tests completed?
+Click all that apply.
+
+15. In the Dognition_aggregated_by_DogID data set, when looking at only dogs who completed 7 or less tests, 
+which of the following is true about the relationship between inter-test intervals (ITIs) and number of tests completed? 
+Click all that apply
+
+## My hints for WEEK 2 Quiz
+I have gotten stuck in week 2 for a couple of days and I have been so frustrated by almost all the problems in the quiz. 
+I want to share my hints with you guys who have the same feeling.
+Firstly, please clean the data according to the exercise, excluding dog ids with sign_in counts > 175.
+
+**To clean the data**
+1) unclick aggregate measures in analysis
+2) rows: sign_in_count (sum)
+3) drag dog ids into the marks card, detail
+4) filter: sign_in_count < 175
+5) select all the data, right click, then choose group
+6) a new group (dog id group 1 here) has been created
+7) put the new grouped dog id into filters from now on for the quiz
+
+**Problem 1** 
+1) rows: user id (count distinct)
+2) filter: remove grouped dog id
+3) make sure to click aggregate measures in analysis
+### 16,261
+
+**Problem 2**
+1) columns: country, dimension, breed
+2) rows: total tests completed (sum), weight
+3) filter: state - 37
+4) make sure to unclick aggregate measures in analysis
+
+### They are all from Estonia
+
+**Problem 3** 
+1) rows: sign in count(sum)
+2) filter: remove the grouped dog id this time, sign in count > 175
+3) view all data
+4) make sure to unclick aggregate measures in analysis
+
+### They are all Shih Tzus that weigh 190 lbs
+
+**Problem 4**
+1) columns: dimension
+2) rows: total tests completed (avg)
+3) filter: dimension - exclude 0
+4) make sure to click aggregate measures in analysis
+
+### None of them. All of the personality dimensions have very similar completion rates.
+
+**Problem 5** 
+1) columns: breed group
+2) rows: total tests completed (both avg and median)
+3) make sure to click aggregate measured in analysis
+
+### Toy dogs complete the least number of tests
+Note:
+AVG Total Test Completed: 8.461
+Median Total Test Complted: 5.000
+
+**Problem 6** 
+1) columns: breed type
+2) total tests completed (median)
+3) make sure to click aggregate measures in analysis
+
+### Socialite
+
+**Problem 7** 
+1) columns: breed type
+2) total tests completed (median)
+3) make sure to click aggregate measures in analysis
+
+### All breed types complete a median of 7 tests
+
+**Problem 8**
+1) columns: breed type, dog fixed
+2) rows: total tests completed (avg)
+3) make sure to click aggregate measures in analysis
+
+### Fixed dogs complete more tests than non-fixed dogs in all breed types
+
+### The greatest difference between the average number of tests completed by fixed vs. non-fixed dogs occurs in the Mixed Breed/ I
+Don’t Know breed category
+
+**Problem 9** 
+1) columns: breed type, dog fixed
+2) rows: dna tested, total tests completed (avg)
+3) 1: tested/fixed 0: not tested/not fixed
+4) make sure to click aggregate measures in analysis
+
+### DNA-tested dogs completed more tests than dogs that were NOT DNA tested in all categories except for the category of Popular Hybrids
+who were fixed
+
+### There was only one dog in the Popular Hybrid breed category who was DNA tested but not fixed
+
+### The Cross-Breed dogs that were DNA tested but NOT fixed were mostly Labrador Retriever-Golden Retriever Mixes
+
+**Problem 10** 
+1) columns: country
+2) rows: dog id (count distinct)
+3) show me column: choose map
+
+### N/A
+
+**Problem 11** 
+1) columns: state
+2) rows: user id (count distinct)
+3) filter: country - US
+4) order the columns from max to min
+5) make sure to click aggregate measures in analysis
+
+### CA
+
+**Problem 12** 
+
+### ME,NC,ND,SD,WY
+
+1) columns: state
+2) rows: total tests completed (median)
+3) filter: grouped dog id as shown in the clean data pattern, state: ME, NC, ND, SD, WY
+4) make sure to click aggregate measures in analysis
+
+**Problem 13** 
+please refer to the the reading material provided in week 2
+
+### Average aggregations are more sensitive to extreme values than median aggregations
+
+**Problem 14** 
+1) as above but set the filter: total tests completed < 19
+2) as above (15)
+
+### "There was a significant positive (p < .05) correlation between average ITIs and number of tests completed."
+### "There was a significant negative (p < .05) correlation between median ITIs and number of tests completed."
+
+
+**Problem 15**
+1) to get the chart:
+columns: total tests completed
+rows: median ITI, mean ITI (all avg measures)
+filter: total tests completed < 7
+unclick aggregate measures in analysis
+edit Axis: Fixed 0-10,000
+
+2) key points in the linear function:
+whether positive or negative: check the slope(the coefficient with median or mean ITI)
+significant: p < 0.05 non-significant: p > 0.05
+
+### There was a significant positive (p < .05) correlation between average ITIs and number of tests completed
+### There was a significant negative (p < .05) correlation between median ITIs and number of tests completed
+
+
+
+
+
+
+
+

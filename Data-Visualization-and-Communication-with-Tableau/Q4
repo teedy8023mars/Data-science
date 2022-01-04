@@ -1,0 +1,213 @@
+# Mentor Hints for Week 4 Graded Quiz
+Question 1
+Please watch The Storyboarding Hourglass video for a review of the hourglass model.
+--> Begin and end your presentation with motivating context
+
+Commentary:
+So, "motivation context" means "big picture". That was something I was missing the first time.
+This was not why I selected the above statement though. I selected the statement because of this picture.
+
+Surround the presentation with "motivating context". When something is surrounded by another thing, it has that thing at the beginning
+and the end. So, the correct answer is "begin and end your presentation with motivating context". I did not think of that the first time.
+I involved spatial reasoning in deriving the answer. My logic was a bit unorthodox, compared to Coursera's explanation. But it is all
+good. I cleared the persistent hurdle between me and a 100%.
+
+I encountered at least one new problem each re-take. Being able to get them all correct tells me that I DID get something away from 
+this week's course contents.
+
+
+Question 2
+Please see video Making Your Data Story Come Alive for a review about story elements.
+
+Question 3
+Please see video Storyboarding Your Presentation to review what those components are.
+
+Question 4
+Please see video Storyboarding Your Presentation to review the correct answer and its rationale.
+
+Question 5
+Please see video Overgeneralization and Sample Bias to review what leads to and prevents this logical fallacy.
+
+Question 6
+Please see video Overgeneralization and Sample Bias to review what leads to and prevents this logical fallacy.
+
+#Commentary:
+The fallacy is over-generalization (or hasty generalization). The analyst was making a claim based on limited evidence, 
+rather than statistics that is more in line with typical or average population. Ideally, the analyst could have asked more probing 
+questions to understand the various business aspects, especially the aspect customers with lower IDs were those who had been with the 
+company the longest. Because the analyst was not aware of this critical business aspect and ran the experiment on the first 1000 
+customer IDs. This is making a claim on limited evidence that does not reflect the average population.
+
+There is some kind of control here: customers who received the advertisements vs. customers who did not receive the advertisements.
+
+Question 8
+Please see video How Correlations Impact Business Decisions to review how correlations impact business decisions.
+
+Question 9
+See video Choosing Visualizations for Story Points to review why certain charts are effective or not effective in business presentations.
+
+Question 10
+Please see video The Neuroscience of Visual Perception can Make or Break your Visualization to review how differences 
+in what humans can perceive should be taken into consideration in your visualizations.
+
+Question 11
+Please see video Misinterpretations Caused by Colorbars to review how colorbars can be misleading.
+
+Question 12
+Go to video Visual Contrast Directs where Your Audience Looks to review how to format your graphs to tell a data story.
+
+Question 13
+Please see video Formatting Slides to Communicate Data Stories to review the concept of data-ink.
+
+Question 14
+Please see video Formatting Slides to Communicate Data Stories to review the concept of data-ink.
+
+Question 15
+Please see video Delivering your Data Story to review effective methods for presenting a data story.
+
+Quiz #4
+1. The hourglass model is a framework for structuring effective business presentations.
+Which of the following is NOT part of the hourglass model? Choose all that apply.
+
+Answer: Opening your presentation with an agenda, A complete description of all the analyses you tried
+
+Comments: Begin your presentation with your agenda and end with a story. Correct!
+The model resebles an hourglass because it suggets that you start your presentation with the big pciture, narrow in to some details, 
+and then come back out to the big picture again at the end of the presentation. Many people forget this last step, but it is very
+important, because the first and last things you say are things your auience is most likely to remember, and are in the things
+that are most likely to leave a lasting impact.
+
+
+2. Beginning your business presentation in the middle of the plot of a motivational story can sometimes be an effective way 
+to lead into your business recommendation.
+Answer: True
+Comments: Correct! Beginning your business presentation in the middle of the plot of a motivational story can create a sense of 
+momentum and expectation for what will come next, which can sometimes be an effective way to lead into your business recommendation.
+
+3. The storyboarding process includes:
+Answer: all of the above
+Comments:
+Steps for Storyboarding:
+1. Right down each insight you discovered during analysis that help you arrive at your decision
+2. Each point could be considered a story point that would have its own graph and slide
+3. Each story point should be able to be summarized in one sentence
+4. Widdle down story points to what you need to make your recommendations.
+* Ideally you will have three points, with three subpoints
+
+5. Organize them in the most compelling order about your recommendation
+1. If NOT contrversial
+*start with strongest point first
+2. If it is controversial
+*Start with least controversial (people are most likely to agree if you get them saying “yes” first
+3. Show the data that supports your point first, then make the point.
+
+6.Draw sketch of what graph would be appropriate for each visualization
+*Help you pick up themes
+*Keep out SD lines etc
+*Show it to multiple people before you show it to the owners
+
+
+4. According to the psychology literature, if the business recommendation you are going to make in a business presentation 
+is likely to be controversial, you should order the stem of your presentation hourglass so that the:
+
+Answers: least controversial point is presented first.
+Comments:Correct! People are more likely to be persuaded by an argument if you get them into a general feeling of agreement first, 
+so starting with your least controversial point will get your audience used to saying “yes” before you present them with something to 
+which they might want to say “no.”
+
+5.The logical fallacy of overgeneralization can be avoided by removing outliers and rows with missing data.
+Answer: False
+Comment: Unfortunately not. The outliers or missing data may share common characteristics, so removing them without prior examination 
+could bias your data. If the data are biased, removing them will lead to overgeneralized conclusions.
+
+6. To test whether a certain advertising campaign would work, an analytics team sorts their customer list from lowest to 
+highest customer ID number, and then sends their advertisement to the first 1000 customers on the list. 
+The rest of the customers did not receive any advertisements that week. When analyzing the results of the campaign one week later, 
+the analytics team realized that there was a previously unknown pattern in the customer ID numbers: 
+the lower the customer number, the longer the person had been a customer. Thus, the customers who received 
+the advertisement were the individuals who had been customers with the company the longest. 
+The analytics team decided the test was invalid and needed to be repeated. 
+The reason for their decision was that analyzing the results in their current form would result in the following logical fallacy
+(or fallacies):
+
+Answer: Over-generalization
+Comment: The fallacy is over-generalization (or hasty generalization). 
+
+7. When two variables are correlated, one variable does not cause the other variable.
+
+Answer: False
+Comment: Always be wary of drawing causation conclusions. Although a correlation between two variables does not mean one variable 
+must cause the other variable, it still permits the possibility that one variable causes the other.
+
+8. The best way to understand the nature of a relationship between two variables is to run a test.
+
+Answer: True
+Comment: Correct! The only way to find out if one factor causes another is to use the scientific method and run a test or experiment 
+where you change the variable you think is causing the effect you want, and hold all other factors constant . Ideally you would start
+by running the tests in small-scale pilot scenarios where the stakes are lower, before you run larger tests or make the recommendation
+to implement a full-scale change.
+
+9. Which charts should you NOT use often in business presentations? Choose all that apply.
+Answer: 3D charts,Scatter plots
+Comments: Correct! Bar charts and line charts are very effective, and pie charts can be effective when they display small numbers of
+categories. Scatter plots are too complicated for general audiences, and 3D charts tend to be misleading.
+
+10. When you want to represent very detailed and nuanced information about continuous variables, given humans’ ability to perceive
+relative differences along different kinds of visual attributes, which of the following attributes should you exploit in your 
+visualizations? Choose the best 2 options.
+
+Answer: position, length
+Comments: Humans have a clear hierchy of how accurate we are at perceiving physical differences. We are great at seeing differences 
+in position or length, but not that good at color or hue.
+
+
+11. If you are in a situation where you MUST use colorbars to represent detailed information about a continuous variable, you should:
+Answer: use a gray scale that goes from black to white. 
+
+Comments: Most color bars unit do not equal one unit of value change.
+Correct! Black to white scales tend to have more even transitions than do color scales, so what you perceive as 1 unit of change in 
+color is more likely to represent 1 unit of physical distance along a grayscale colorbar than a multi-colored colorbar.
+
+12. Visualizations for persuasion should: (Choose all that apply) 3
+Answer:show the visualizations in an order that helps your audience evaluate the options clearly, show selected pieces of data,
+direct your audience’s eyes to the precise points of the data that support your argument.
+
+Comments: Correct! Visualizations for analysis should often show as much data as possible, but visualizations for persuasion should 
+filter to show only the data that supports the argument you are making. 
+
+13. Which of the following reflect(s) the principles of maximizing the data-ink ratio? Choose all that apply.
+
+Answer: Reducing the amount of text on the slide, Making the borders of bars in a graph the same as the slide background
+Comment: Use the rule of thirds for transition slides, put text and images along the lines instead of centered.
+Data slides should be front and center
+
+14.  It’s a good idea to apply the rule of thirds to: (Choose all that apply)
+Answer: Transition slides, Slides illustrating stories,Soft break slides, Slides meant to catch your audience’s attention
+Comments: Data slides should display the data in the center of the slide and thus do not follow the rule of thirds. 
+
+15. Effective presentation techniques include:
+Answer: all of the above
+Comment: Correct! All of these techniques will greatly improve how your presentation is received.
+
+16. A hospital was having problems with the amount of time employees with direct care responsibilities were absent from work.
+Due to the high levels of absenteeism, patient satisfaction was declining, 20% of patient-related work was not getting done, 
+and 47% of non-patient work was not getting done. At the advice of a consulting company, the hospital implemented a positive 
+incentive system that would allow all employees to convert up to 24 hours of unused sick time into additional pay or more vacation
+days in order to reduce absenteeism. After 6 months of implementing the program, the hospital analysts calculated that absentee
+rates declined an average of 11.5 hours per employee, and concluded that the program was successful in this company. 
+Did the hospital analysts commit any logical fallacies when arriving at their conclusion, and if so, which fallacy (or fallacies)?
+--> Lack of controls 
+
+Answer: Lack of Control. Correct!
+
+Commentary:
+The key question is here: the analyst ran the experiment without a control group. If an experiment is ran indiscriminately over a 
+population, you cannot conclude exactly what factors are causing the outcome you see. There might be factors in the population that, 
+even if you do not run the experiment, would still cause the observed outcome. So, the logical fallacy is "lack of control".
+
+The analyst could have done the following to avoid making the logical fallacy "lack of control": randomly select a group of employees to
+give out the incentive. This is the experimental group. Employees who are not offered the incentive is the control group. After six 
+months, compare the attendance rates of the experimental group and control group. However, if the difference in attendance rates between 
+the control group and experiment group is not strong enough or there is no difference, then, the increase in attendance rate in the 
+experimental group is more likely to have been caused by factors other than the incentive program recommended by the analyst.
+
