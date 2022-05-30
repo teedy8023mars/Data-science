@@ -1,0 +1,705 @@
+Intro to Inferential Statistics
+===============================
+
+Lesson 1: Introduction and Lesson 7 (Intro to Descriptive Statistics) Review
+----------------------------------------------------------------------------
+An approximate answer to the right problem is worth a good deal more than an exact 
+	answer to an approximate problem.
+
+What is Inferential Statistics?
+a. Finding approximate answers
+b. Make predictions about data
+c. Run tests to find the accuracy of the model
+
+Course Overview (Descriptive Statistics):
+a. Research methods and visualizing data
+b. Describing data
+c. Normal Distribution
+
+Course Overview (Inferential Statistics):
+a. Estimation and Hypothesis testing
+b. t-tests and ANOVA
+c. Relationships between two variables
+
+Central Limit Theorem:
+a. Mean of sampling distribution = Mean of population distribution
+b. Relationship of standard deviation of sampling distribution (SE) and standard
+	deviation of population (σ) is given by SE = σ / sqrt(sample size)
+
+Central Limit Theorem helps in determining the probability of randomly selecting
+	a sample with mean at least x.
+
+--------------------------------------------------------------------------------
+
+Lesson 2: Estimation
+--------------------
+Point estimation involves the use of sample data to calculate a single value 
+	which is to serve as a "best guess" or "best estimate" of an unknown 
+	population parameter.
+
+Approximately 95% of sample means falls within 2σ/sqrt(n) of the population mean.
+
+Margin of error (Error margin): 2σ/sqrt(n) = 2 * Standard Error (SE)
+where Standard Error is standard deviation of sampling distribution.
+
+In general,
+Error margin = z * Standard Error
+
+Population mean = (sample mean - error margin, sample mean + error margin)
+(95% confidence interval for the mean)
+
+95% of data falls under 2 SD of mean
+95% of data falls under 1.96 SD of mean.
+
+In other words:
+In a sampling distribution, 95% of sample means fall within 1.96 standard errors
+	from the population mean.
+
+Margin of error: 1.96 * σ/sqrt(n) = 1.96 * Standard Error (SE)
+where Standard Error is standard deviation of sampling distribution.
+
+In general, we can say with 95% confidence that
+Point Estimate of population mean = Sample mean
+Interval Estimate of population mean = (sample mean - error margin, 
+										sample mean + error margin)
+ 
+Using z-table:
+98% of sample means falls within 2.33 standard errors from the population mean.
+
++/- 2.33 are the critical values of z for 98% confidence.
++/- 1.96 are the critical values of z for 95% confidence.
+
+Confidence intervals are used for estimating actual population parameters.
+
+--------------------------------------------------------------------------------
+
+Lesson 3: Hypothesis testing
+----------------------------
+If the probability of getting a particular sample mean is less than alpha, it is
+	"unlikely to occur".
+
+Levels of Likelihood (Alpha levels):
+1 .05 (5%)
+2 .01 (1%)
+3 .001 (0.1%)
+
+Less than alpha levels is usually considered unlikely.
+
+Z-Critical value: Above which the probability of getting a particular sample mean
+	is less than alpha.
+Critical region: Region above Z-Critical value.
+
+1.65 z-score marks the cutoff of 0.05 (5%) critical region
+2.33 z-score marks the cutoff of 0.01 (1%) critical region
+3.08 z-score marks the cutoff of 0.001 (0.1%) critical region
+
+For e.g
+z score of 1.82, then sampling mean is significant at p < 0.05
+
+Z score of sample mean is calculated by using sampling distribution as a reference.
+
+Two-tailed critical values at alpha = 0.05 (5%): +/- 1.96, since it got distributed
+	in both the ends equally (2.5% each).
+
+Two-tailed critical values at alpha = 0.01 (1%): +/- 2.57, since it got distributed
+	in both the ends equally (0.5% each).
+
+Two-tailed critical values at alpha = 0.001 (0.1%): +/- 3.32, since it got distributed
+	in both the ends equally (0.05% each).
+
+Ho(null hypothesis): Population mean = Sample mean (Population mean after intervention)
+Ha(alternative hypothesis): Population mean < Sample mean
+							Population mean > Sample mean
+							Population mean != Sample mean
+
+For null hypothesis to be true, sample mean will lie outside the critical region.
+But, we can't prove that null hypothesis is true, so we only obtain invidence to
+	reject the null hypothesis.
+
+For e.g
+A population parameter
+population mean: 7.47
+SD: 2.41
+
+Sample of 30:
+sample mean: 8.3
+SE: 2.41/sqrt(30)
+z-score = sample mean - population mean / SE = 1.89
+
+At alpha = 0.05, we failed to reject the null for above example because z-score (1.89)
+	is less than z-critical value of 1.96 for two-tailed hypothesis test.
+
+Standard deviation of sampling distribution is standard error. SD/sqrt(n)
+
+Hypothesis test:
+Ho: Population mean = Population mean after intervention
+Ha: Population mean >!=< Population mean afer intervention
+
+One-tailed hypothesis testing is used to get directional treatment.
+Two-tailed hypothesis testing is used to get non-directional treatment.
+
+In general, two-tailed tests are more conservatives.
+
+What does it mean to reject the null hypothesis?
+a. Our sample mean falls within the critical region.
+b. The z-score of our sample mean is greater than the critical value.
+c. The probability of obtaining the sample mean is less than the alpha value.
+
+Reject the null: p < 0.05
+
+Hypothesis testing is prone to misinterpretations:
+
+If we reject the null hypothesis, but it's actually true, then it is type 1 error.
+If we failed to reject the null hypothesis, but it's false, then it is type 2 error.
+
+--------------------------------------------------------------------------------
+
+Lesson 4: t-Tests Part 1
+------------------------
+Z-test (Hypothesis testing) works when we know population parameters (𝝁, σ).
+
+But, when we don't have population parameters, we can still estimate population
+	parameters using samples.
+
+Estimate of population SD using sample SD using Bessel's Correction:
+SD = sqrt(Σ (xi - x̅)^2 / (n-1))
+
+For sampling distribution where SE is not calculated using central limit theorm,
+	it is known as t-distribution.
+
+In general,
+In probability and statistics, Student's t-distribution (or simply the t-distribution) 
+	is any member of a family of continuous probability distributions that arises 
+	when estimating the mean of a normally distributed population in situations 
+	where the sample size is small and population standard deviation is unknown.
+
+The t-distribution is symmetric and bell-shaped, like the normal distribution, 
+	but has heavier tails, meaning that it is more prone to producing values that 
+	fall far from its mean.
+
+For t-distribution, when sample size (n) increases:
+a. SE decreases
+b. t-distribution approaches a normal distribution.
+
+Degrees of Freedom:
+You have n numbers that must sum to 10?
+Degrees of Freedom = n-1
+
+For sampling distribution, if we already know the mean, then there are n-1 degrees
+	of freedom to choose the sample.
+
+For sample size n, degrees of freedom is n-1.
+
+t-table:
+Unlike z-table, t-table tells critical values in the body.
+Column are the area under right tail.
+Rows represents the degrees of freedom.
+On x-axis, we have t-values.
+
+One sample t-test:
+t = (x̅ - 𝝁) / (SE/sqrt(n)) where SE is calculated using Bessel's Correction.
+
+Larger the t-statistics, lower the probability of obtaining t-statistics, larger
+	the difference between sample mean and population mean.
+
+Cohen's d (Effect Size Measure):
+Standardized mean difference that measures the distance between means in standarized
+	units.
+
+In general,
+Cohen's d is defined as the difference between two means divided by a standard 
+	deviation for the data
+
+Cohen's d: (x̅ - 𝝁) / sd
+Bigger the Cohen's d, more probability is that sample comes from new distribution.
+
+Confidence Interval: (Sample mean - t-statistic * SE, Sample mean + t-statistic * SE)
+where SE = S / sqrt(n) for t-statistic
+and t-statistic is 2.064 for 95% confidence.
+and t-statistic * SE is also known as margin of error
+
+Dependent t-test for paired samples:
+Within subject designs
+	a. Two conditions
+	b. Pre-test, post-test
+	c. Growth over time
+
+Two samples (xi, yi) corresponds to (di) where di = |xi-yi|, and we use t-tests on d.
+di is used to calculate SE along with Bessel's Correction.
+
+--------------------------------------------------------------------------------
+
+Lesson 5: t-tests Part 2
+------------------------
+Effect Size:
+In experimental studies, it is size of treatment's effect.
+In non-experimental studies, it is refer to strength of relationship between variables.
+
+In z-test and t-test, effect size is calculated using mean difference (x̅ - 𝝁)
+
+Types of effect size measures:
+a. Difference Measures
+	i. Mean difference
+	ii. Standardized differences (Cohen's d)
+b. Correlation measures (r2)
+
+r2: proportion of variation in one variable that is related to (explained by)
+	another variable.
+
+Statistical Significance:
+Rejected the null hypothesis
+Results are not likely due to chance.
+
+Meaningfulness of Results:
+1. What was measured?
+2. Effect Size
+3. Can we rule out random chance?
+4. Can we rule out alternative explanations? (Lurking Variables)
+
+Cohen's d:
+Effect size measure calculated by standardized mean difference.
+
+d = (x̅ - 𝝁) / SD
+
+Correlation measures:
+Coefficient of Determination (r2)
+a. Value ranges from 0-1
+
+In t-tests:
+r2 = t^2 / (t^2 + df)
+where
+t: t-statistics
+df: degree of freedom
+
+Results Selection:
+a. Descriptive Statistics
+	i. in text
+	ii. in graph
+	iii. in tables
+b. Inferential Statistics
+	i. hypothesis test (alpha level)
+		1. kind of test
+		2. test statistic
+		3. df
+		4. p-value
+		5. direction of test
+	ii. Confidence Intervals
+		1. Confidence level
+		2. Lower limit
+		3. Upper limit
+		4. Confidence interval for what?
+	iii. Effect size measures
+		1. Difference measures
+		2. Correlation measures
+
+APA Style for writing inferential statistics result.
+For e.g 
+
+For hypothesis test (t-test):
+t(df) = x.xx, p = 0.xx, direction
+
+For Confidence Interval:
+Confidence interval on asdf difference, P% CI = (x, y)
+
+Full one-sample t-test:
+U.S families spent an average of 151 dollars per week on food in 2012.
+Food Now company wants to reduce spent per week by introducing cost saving programs.
+They found average spent for 25 people having standard deviation 50 is 126.
+How significant is their cost saving programs?
+
+What is the dependent variable?
+Amount of money spent per week on food.
+
+What is the treatment?
+Cost saving program
+
+What is the null hypothesis?
+The program did not change the cost of food.
+
+What is the alternative hypothesis?
+The program reduced the cost of food.
+
+Ho: 𝝁(program) >= 151
+Ha: 𝝁(program) < 151
+
+What type of test?
+one tailed in -ve direction
+
+Degrees of freedom for sample size (25)
+df = n - 1 = 24
+
+tcritical at alpha = 0.05 for -ve one tailed test
+-1.711
+
+SE = SD / sqrt(n) = 50 / sqrt(25) = 10
+
+Metrics:
+Mean Difference = -25
+Compute t-statistic:
+t-statistic = mean difference / SE = -25/10 = -2.5
+
+Draw the t-distribution
+Place tcritical on distribution
+Shade critical region
+Place t-statistic on t-distribution
+
+Does t falls in critical region?
+Yes
+
+What is p value of t?
+p < .05
+p = .00985 = 0.01
+
+Are these results statistically significant?
+Yes
+
+Are the results meaningful?
+It depends
+
+Cohen's d = -0.050
+
+r2 = .21 = 21%
+It shows that 21% is due to cost saving program.
+
+Compute margin of error for 95% CI = 20.64
+Compute the 95% CI for the mean = (105.36, 146.64)
+
+--------------------------------------------------------------------------------
+
+Lesson 6: t-test Part 3
+-----------------------
+Dependent Samples (Repeated Measure):
+Within subject designs
+a. Two conditions
+b. Longitudinal
+c. Pre-test, Post-test
+
+Advantages:
+a. Controls for individual differences
+	i. Use fewer subjects
+	ii. Cost effective
+	iii. Less time-consuming
+	iv. Less expensive
+
+Disadvantages:
+a. Carry over effects
+b. Order may influence the results
+
+Independent Samples:
+Between subject designs
+a. Experimental
+b. Observational
+
+For two independent samples:
+N(𝝁1, σ1) - N(𝝁2 - σ2) = N(𝝁1 - 𝝁2, sqrt(σ1^2 + σ2^2))
+where N is normal distribution
+
+In general,
+Subtract two normally distributed samples:
+SD = sqrt(SD1^2 + SD2^2)
+and SE = SD / sqrt(n)
+
+For different samples sizes,
+SE = sqrt(SD1^2/n1 + SD2^2/n2)
+
+Above SE assumes samples are approximately the same size.
+
+Also, degree of freedom (df) = (n1-1) + (n2-1) = n1+n2-2
+or use smaller of n1-1 or n2-1
+
+t-statistic = 𝝁1 - 𝝁2 / SE
+
+Confidence Interval: (𝝁1 - 𝝁2 +/- Error margin)
+where Error margin = tcritical * SE
+
+Pooled Variance:
+Sp^2 = (SS1 + SS2) / (df1 + df2)
+where SS is sum of squares of deviations
+
+One can use pooled variance to calculate SE, i.e
+SE = sqrt(Sp^2/n1 + Sp^2/n2)
+
+In general, use pooled variance while calculating SE for t-statistic for independent
+	samples.
+
+--------------------------------------------------------------------------------
+
+Lesson 7: One-Way ANOVA
+-----------------------
+In order to test significance difference between two samples use t-statistics.
+But in order to test significance between multiple samples n, we have to do
+	(n C 2) = n choose 2 t-tests
+
+In general,
+t-statistic = distance or variability between means / error
+
+In order to compare three or more samples, find Grand Mean:
+Variability between samples is calculated using average squared deviation of each
+	sample mean from the total mean.
+
+For equal sample sizes:
+Grand mean = mean of sample means = mean of all values
+
+For unequal sample sizes:
+Grand mean != mean of sample means
+
+Between-group variability:
+The smaller the distance between sample means, the less likely population means
+	will differ significantly.
+The greater the distance between sample means, the more likely population means
+	will differ significantly.
+
+Within-group variability:
+The greater the variability of each individual sample, the less likely population
+	means will differ significantly.
+The smaller the variability of each individual sample, the more likely population
+	means will differ significantly.
+
+Analysis of Variance (ANOVA)
+One-way ANOVA when we have only one independent variable.
+
+Ho: 𝝁1 = 𝝁2 = 𝝁3 ... = 𝝁n
+Ha: At least one pair of samples is significantly different
+
+F = between-group variability / within-group variability
+
+between-group variability = Σ n (x̅k - x̅g)^2 / k-1
+where
+n = Sample Size
+x̅ = Sample Mean
+x̅g = Grand Mean
+
+within-group variability = Σ (xi - x̅k)^2 / (N-k)
+where N is total number of values from all samples
+k is the number of samples
+
+F = (SS(between) / df(between)) / (SS(within) / df(within)) = MS(between) / MS(within)
+Also,
+SS(between) + SS(within) = SS(total)
+df(between) + df(within) = df(total)
+
+where SS is sum of squares
+F-statistic is never negative.
+F test is always non-directional.
+
+alpha level with F-critical value to get the confidence of significance.
+
+F-Table:
+Different F-table for different alpha levels.
+
+--------------------------------------------------------------------------------
+
+Lesson 8: ANOVA Continued
+-------------------------
+ANOVA shows at least one pair of samples is significantly different, but in order
+	to find which one, additional testing is required.
+
+Multiple Comparison Tests: (Tukey's Honestly Significant Difference (HSD))
+To perform pair wise comparison after rejecting the null hypothesis in ANOVA.
+
+Tukey's HSD = q * sqrt(MS(within) / n) = q * (Sp / sqrt(n))
+where q is Studentized Range Statistic
+
+In order to find q value, look at q table.
+
+For any pair of sample means, if it is greater than Tukey' HSD value then, it is
+	significantly different.
+
+Effect Size measure:
+Cohen's d: In case of independent sample t-statistic
+d = (x̅1 - x̅2) / Sp
+where Sp is pooled standard deviation
+
+For more than two samples: Compute for all samples
+d = (x̅i - x̅j) / (MS(within))
+
+Eta Square:
+η^2 = proportion of total variation that is due to between-group differences
+	(explained variations)
+
+	= SS(between) / SS(total)
+
+η^2 ranges from 0 to 1.
+
+ANOVA with different sample sizes:
+SS(between) = Σ nk (x̅k - x̅g)^2
+
+In order to reduce type 2 errors, increase power:
+a. Get more samples
+b. Samples should be similar
+c. Larger samples results in higher power.
+d. Lower within-group variability leads to higher power.
+
+ANOVA assumptions:
+All the samples comes from normal distribution. 
+Homogeneity of variance
+Independence of observations
+
+We can violate these assumptions:
+a. Sample size is large - violate normality
+b. Nearly equal sample sizes and ratio of any two variance does not exceed 4
+	- violate homogeneity of variance.
+
+--------------------------------------------------------------------------------
+
+Lesson 9: Correlation
+---------------------
+With two variables:
+a. Different design:
+	i. How we collect our data
+	ii. How we visualize our data
+b. Analysis is similar
+
+X: Predictor, explanatory, independent variable
+Y: Outcome, response, dependent variable
+
+How to show two variables have a relationship?
+Scatter Plot
+
+A strong relationship has direction.
+If independent variable increases, so does dependent variable, then it is known
+	as positive direction relationship.
+If independent variable increases, but dependent variable decreases, then it is 
+	known as negative direction relationship.
+
+Relationship = correlation in statistics
+
+Quantify relationship with Correlation Coefficient (r) (Pearson's r)
+
+r = cov(x, y) / Sx . Sy
+where cov is covariance
+Sx = SD of x
+Sy = SD of y
+
+Coefficient of Determination:
+r2 = % of the variation in Y explained by the variation in X.
+
+Hypothesis testing for correlation coefficient:
+r = correlation coefficient of samples
+𝜌 (rho) = true correlation of population
+
+Ho: 𝜌 = 0
+Ha: 𝜌 >!=< 0
+
+Use t-statistic to reject or fail to reject the null hypothesis.
+t = r * sqrt(N-2) / sqrt(1-r^2)
+df = N-2
+
+Use confidence Interval for correlation coefficient to get whether you have 0
+	correlation coefficent, thus using it as hypothesis tesing.
+
+Outlier affects the correlation coefficient.
+
+Correlation does not prove causation.
+
+Ambiguous temporal precedence between two vaiables makes causation hard to prove.
+
+--------------------------------------------------------------------------------
+
+Lesson 10: Regression
+---------------------
+Line of best fits
+a. describe the data
+b. make predictions
+
+Observed values from actual data (y)
+Expected values from regression model (y^)
+
+Difference between observed and expected is residual.
+
+Regression line:
+y^ = mx + c
+where m is slope and c is intercept.
+
+y^ = a + bx
+
+How to find the line of best fine?
+Minimize the sum of residuals
+Minimize the sum of absolute residuals
+Minimize the sum of squared residuals
+
+Σ (y - y^)^2
+
+Also,
+b = r * (Sy / Sx)
+
+Regression line always go through (x̅, y̅)
+y̅ = a + r * (Sy / Sx) * x̅
+For above, get a
+
+In linear regression models,
+For 1 unit change in x variable, there is a change of slope units in y variable.
+
+Error in model:
+Standard error of the estimate = sqrt (Σ y - y^)^2 / N-2)
+
+Confidence interval for y, and slope.
+
+Hypothesis testing for slope:
+β1 = population slope
+βo = population y-intercept
+b = sample slope
+a = sample y-intercept
+
+Ho: β1 = 0
+Ha: β1 >!=< 0
+
+Use t-test for reject or fail to reject the null hypothesis.
+df = N-2
+
+Factors that affect simple linear regression:
+a. Outliers
+
+Multiple Regression:
+y = a + bx1 + cx2 .. mxn
+where b, c, ... m are known as regression coefficients.
+
+Finding the significance of regression coefficients.
+
+--------------------------------------------------------------------------------
+
+Lesson 11: 𝞆^2 (Chi-squared) Test
+---------------------------------
+z-test
+t-test
+ANOVA (f-test)
+Correlation
+Regression
+
+All above parametric tests requires numerical data.
+
+Types of numerical data:
+a. Ordinal data: data with rank
+b. Interval data: data with ranks and equal intervals
+c. Ratio: data with ranks, equal intervals, and absolute zero
+d. Nominal/Categorical
+
+Non-parametric tests (𝞆^2 test):
+These tests doesn't require mean, SD
+
+How well do our observed frequencies "fit" the expected frequencies?
+𝞆^2 Goodness-of-Fit Test
+
+𝞆^2 = Σ (fo - fe)^2 / fe
+where fo is observed frequency
+fe is expected frequency
+
+𝞆^2 is smaller when expected values are closer to observed values.
+𝞆^2 is never negative, hence one-directional.
+
+𝞆^2 critical value
+
+The more categories, the more likely we'll get a larger 𝞆^2 statistic.
+With more categories, 𝞆^2 is larger and therefore we need a higher critical value
+	to reject the null hypothesis.
+
+df = n-1 where n is number of categories
+
+Chi-Square test for Independence.
+
+Effect Size:
+Cramer's V = sqrt(𝞆^2 / n (k-1))
+
+Assumptions and Restrictions:
+a. Avoid dependent observations
+b. Avoid small expected frequencies (large n)

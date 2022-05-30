@@ -1,0 +1,233 @@
+Intro to Descriptive Statistics
+===============================
+
+Lesson 1: Intro to Research Methods
+-----------------------------------
+Descriptive Statistics allows to summarize data and shape how to make decisions.
+
+It involves gathering, organizing, computing, and visualizing information from 
+	the dataset.
+
+A good sample size, a representative sample, and a sound methodology are important
+	to conduct a valid research.
+
+Describe your problem statement explicitly (Define Constructs).
+
+A construct is an idea or theory containing various conceptual elements, typically 
+	one considered to be subjective and not based on empirical evidence.
+
+Operational definition makes measuring constructs in real world possible.
+
+Data consists of samples (rows) and variables (columns).
+
+In order to perform research correctly, make everything constant while measuring 
+	one variable. These are called extraneous factors.
+
+Average score of entire population in an experiment: Population Parameter (𝝁)
+Average score of sample in an experiment: Sample Statistic (x̅)
+
+We can predict population parameter using sample statistics, given a good sample.
+
+𝝁 - x̅ = Sampling Error
+
+Bigger the sample, more the sample statistic will be closer to population parameter.
+
+Another way is to draw multiple random samples which will give interval in which
+	population parameter lies.
+
+Plotting samples on a graph:
+Variable on x axis is independent variable.
+Variable on y axis is dependent variable.
+
+Correlation does not prove causation.
+
+Show correlation => Observational studies surveys
+Show causation => Controlled experiment
+
+Controlled experiment uses blinding techniques to avoid biases.
+Use random assignment.
+
+--------------------------------------------------------------------------------
+
+Lesson 2: Visualizing Data
+--------------------------
+Organizing data helps in describing data, seeing pattern, and making decisions.
+
+a. Frequency Table:
+Frequency Table is quickist way to organise data into meaningful information.
+
+b. Proportion (Relative Frequency) Table:
+How frequency relates to each other.
+
+c. Percentage Table:
+Proportion * 100
+
+For any frequency table, the relative frequency should add to 1.
+
+For continuous data, intervals(bins) are used for frequency table.
+
+Histogram: (x axis - Numerical)
+Visualizing frequency table of a continuous data.
+
+Bar Graph: (x axis - Categorical)
+Visualzing frequency table of a discrete data.
+
+Frequency table results in loss of data.
+
+Symmetrical Histograms are called Normal Distribution.
+
+--------------------------------------------------------------------------------
+
+Lesson 3: Central Tendency
+--------------------------
+Information representing the data:
+a. Mean
+b. Median
+c. Mode
+
+Mode: Highest frequency element in the data.
+Uniform distribution doesn't have a mode.
+A distribution can have more than one mode.
+
+Mode of a sample can be different from the mode of the population, hence it can't
+	be used to learn about population parameter.
+
+Mean (x̅):
+x̅ = Σ x / n (Sample Mean)
+𝝁 = Σ x / N (Population Mean)
+
+The mean of a sample can be used to make inferences about the population it came
+	from.
+
+Mean can be misleading in presence of outliers.
+
+Median: 
+Middle element after sorting the data.
+Median handles outlier nicely. It also exposes them. Hence, they are very robust.
+
+--------------------------------------------------------------------------------
+
+Lesson 4: Variability
+---------------------
+Range as a way of describing variability of the data.
+Range of a distribution quantify the spreadness of the distribution.
+Range = max(sample) - min(sample)
+
+Outlier affects the range of the data.
+
+Quartile: Cutting first 25% and last 25% of data (min, 25%, 50%, 75%, max)
+Q1 Q2 Q3, where Q2 is median
+
+In order to handle outliers, define 
+	Interquartile Range (IQR) = Q3 - Q1
+
+Outlier:
+Q1 - 1.5(IQR) < Outlier < Q3 + 1.5(IQR)
+
+Visualization of Quartile and Outlier:
+Boxplot
+
+Range or IQR doesn't describe variability properly of different distribution
+	differently.
+
+Average Deviation = Σ (xi - x̅) / n
+Average Absolute Deviation = Σ (| xi - x̅ |) / n
+Average Square Deviation(Variance) = Σ (xi - x̅)^2 / n
+Standard Deviation = sqrt(Variance)
+
+Problem with average deviation is that it can turn out to be zero.
+
+What's so great about SD anyway?
+In normal distribution, where mean = mode = median
+68% of data falls under 1 SD of mean.
+95% of data falls under 2 SD of mean.
+
+SD of sample < SD of population, since sample (Normal Distribution) comes from 
+	68% of the data which has low SD.
+
+In order to handle this, we use Bessel's Correction, i.e divide by (n-1) instead
+	of n.
+
+SD of sample: sqrt (Σ (xi - x̅)^2 / n)
+SD of population using sample: sqrt(Σ (xi - x̅)^2 / (n-1))
+
+--------------------------------------------------------------------------------
+
+Lesson 5: Standardizing
+-----------------------
+Histogram enables to analyze the shape of the distribution and think critically
+	about the mean, median, and mode of the data.
+
+It also helps in comparing data points.
+
+Histogram with relative frequency is more useful in comparing data points.
+
+Normal Distribution:
+Mean = Median = Mode
+It helps in calculating proportion in between any two data points.
+
+84% of data falls before 1 SD of mean.
+
+Area under normal distribution = 1
+
+Location of each data point is described in terms of SD.
+z-score is the number of standard deviations from the mean a data point is.
+Z score = (x - 𝝁) / SD
+
+Comparing two normal distributions require them to be on a same scale. One way
+	of doing that is to convert them to standard normal distribution.
+
+Standard Normal Distribution:
+Calculating z score for each data point.
+Making the distribution's mean = 0, S.D = 1
+
+We can convert any normal distribution to any normal distribution.
+Normal Distribution (1) -> Standard Normal Distribution -> Normal Distribution (2)
+
+--------------------------------------------------------------------------------
+
+Lesson 6: Normal Distribution
+-----------------------------
+In a normal distribution, by knowing where on the x axis a value falls, in terms
+	of standard deviation (z score), we can determine the percentage less than
+	or greater than any value.
+
+Area under the normal distribution = 1
+Because it is plotted using relative frequency (proportion).
+Curve is known as Probability Density Function (PDF).
+
+Area under PDF is the probability.
+
+Area = probability of randomly selecting less than x = proportion in sample/population
+	with score less than x.
+
+In order to calculate the proportion from any point to any point in a normal
+	distribution, convert it into standard normal distribution, and use z table.
+
+--------------------------------------------------------------------------------
+
+Lesson 7: Sampling Distributions
+--------------------------------
+Comparing sample in a population with other samples or whole population.
+Use mean and SD of various samples, and the whole population for comparison.
+
+1. Mean of population (Population Parameter)
+2. Draw sample from population (sample size)
+3. Find mean of the sample
+4. Repeat steps 2 and 3 multiple times > 100
+5. Find mean of sample means (M)
+
+Distribution of sample means will be normal distribution given sample means is of
+	considerable size. This is called sampling distribution.
+
+Properties of sampling distribution:
+1. Mean of population = Mean of sampling distribution.
+2. SD of population (sigma) = sqrt(sample size) * SD of sampling distribution (SE)
+
+In order words: The Central Limit Theorem
+SE(Standard Error) = sigma / sqrt(n)
+
+Sample size = 1 will result in uniform distribution, since there is no sample mean.
+
+Sampling distribution will always be a normal distribution drawn from any type of
+	population distribution.
